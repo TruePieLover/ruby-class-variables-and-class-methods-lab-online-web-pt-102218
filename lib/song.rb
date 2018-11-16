@@ -23,7 +23,7 @@ class Song
   def self.genrechecker
     genrechecker = {}
      @@genres.each do |x|
-      genrechecker[x] ||= 0
+      genrechecker[x] || = 0
       genrechecker[x] = x + 1
     end
     genrechecer
