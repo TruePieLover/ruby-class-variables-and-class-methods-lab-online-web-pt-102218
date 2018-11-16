@@ -20,11 +20,11 @@ class Song
   def self.genres
     @@genres.uniq
   end
-  def self.genre_count
-    genre_counter = {}
-     @@genres.each do |genre|
-      genre_counter[genre] ||= 0
-      genre_counter[genre] += 1
+  def self.genrechecker
+    genrechecker = {}
+     @@genres.each do |x|
+      genrechecker[x] ||= 0
+      genrechecker[x] = x + 1
     end
-    genre_counter
+    genrechecer
   end
